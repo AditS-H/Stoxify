@@ -1,26 +1,22 @@
-cat > index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StoXify - Trading Community</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/lucide-react@latest/dist/umd/lucide-react.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>
-        body { margin: 0; background: black; color: white; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-thumb { 
-            background: linear-gradient(45deg, #8b5cf6, #ec4899); 
-            border-radius: 10px; 
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StoXify - Trading Community</title>
+  <!-- ✅ Tailwind CDN (keep this) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; background: black; color: white; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(45deg, #8b5cf6, #ec4899);
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/babel" src="App.js"></script>
+  <div id="root"></div>
+  <!-- ✅ React gets injected here by src/index.js -->
 </body>
 </html>
