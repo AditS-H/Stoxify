@@ -7,15 +7,15 @@ const Footer = () => {
       <footer className="relative border-t border-white/10 py-16 overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-64 h-64 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-liquid-float" />
-          <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl animate-liquid-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl animate-liquid-float" />
+          <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-gradient-to-r from-cyan-500/20 to-white/10 rounded-full blur-3xl animate-liquid-float" style={{ animationDelay: '2s' }} />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-2">
-              <h3 className="text-4xl font-black bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent mb-6">
+              <h3 className="text-4xl font-black bg-gradient-to-r from-blue-400 via-cyan-400 to-white bg-clip-text text-transparent mb-6">
                 StoXify
               </h3>
               <p className="text-gray-300 text-lg mb-8 max-w-md leading-relaxed">
@@ -27,7 +27,7 @@ const Footer = () => {
                 {['Twitter', 'LinkedIn', 'YouTube', 'Telegram'].map((social, index) => (
                   <button
                     key={social}
-                    className="group w-12 h-12 bg-white/10 backdrop-blur-xl rounded-xl border border-white/20 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 transition-all duration-300 flex items-center justify-center hover:scale-110"
+                    className="group w-12 h-12 bg-white/10 backdrop-blur-xl rounded-xl border border-white/20 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 flex items-center justify-center hover:scale-110"
                   >
                     <span className="text-sm font-medium text-white group-hover:text-white">
                       {social.charAt(0)}
@@ -59,11 +59,11 @@ const Footer = () => {
               <h4 className="text-xl font-bold text-white mb-6">Get in Touch</h4>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3 text-gray-400">
-                  <MessageCircle className="w-5 h-5 text-purple-400" />
+                  <MessageCircle className="w-5 h-5 text-blue-400" />
                   <span>support@stoxify.in</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-400">
-                  <Users className="w-5 h-5 text-blue-400" />
+                  <Users className="w-5 h-5 text-cyan-400" />
                   <span>Join our community</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-400">
